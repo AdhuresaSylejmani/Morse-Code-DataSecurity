@@ -30,21 +30,3 @@ MORSE_CODE = { 'A':'wow', 'B':'-...',
 
                     '(':'-.--.', ')':'-.--.-'}
 
-
-def encrypt(message):
-
-    cipher = ''
-
-    for letter in message:
-
-        if letter != ' ':
-
-
-            cipher += MORSE_CODE[letter] + ' '
-
-        else:
-            cipher += ' '
-
-
-
-    return cipher
