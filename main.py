@@ -82,6 +82,69 @@ def encrypt(message):
                 citext = ''
 
     return decipher
+  
+  def Make_Sound(message):
+
+
+
+    import winsound
+
+
+
+    import time
+
+
+
+    frequence = 600
+
+
+
+    duration = 200
+
+
+
+    for cipher in message:
+
+
+
+         if cipher == '.':
+
+
+
+           winsound.Beep(frequence, duration)
+
+
+
+         elif cipher == '-':
+
+
+
+           winsound.Beep(frequence, 3*duration)
+
+
+
+         elif cipher == ' ':
+
+
+
+           time.sleep(0.5*3*duration/1000)
+
+
+
+         elif cipher == ',':
+
+
+
+           time.sleep(0.5*7*duration/1000)
+
+
+
+         else:
+
+
+
+           winsound.Beep(2*frequence, 3*duration)
+
 
 
 
