@@ -11,3 +11,29 @@ def main():
 
 
     print (result)
+
+    message = "-. .  .--- . -- ..  --. .-. ..- .--. ..  ..  .--. wow .-. .  -. .  .-.. . -. -.. . -.  ... .. --. ..- .-. .. wow  .  - .  -.. .... . -. wow ...- . "
+
+
+
+    result = decrypt(message)
+
+
+
+    Make_Sound(message)
+
+
+
+    print (result)
+
+
+
+
+
+
+
+if __name__ == '__main__':
+
+
+
+    main()
